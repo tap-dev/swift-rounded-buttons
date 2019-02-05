@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoundedButtons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x9-uW-Xt1" customClass="RoundedButton" customModule="RoundedButtons" customModuleProvider="target">
+                                <rect key="frame" x="147.5" y="153.5" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ng4-Yf-4HZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="iQy-EX-KNa"/>
+                                </constraints>
+                                <state key="normal" image="face_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyp-Fo-lDD">
+                                <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="RIM-AS-wkL"/>
+                                    <constraint firstAttribute="height" constant="80" id="vlz-S5-Qn8"/>
+                                </constraints>
+                                <state key="normal" image="heart_icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLW-m0-FLq">
+                                <rect key="frame" x="147.5" y="433.5" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="6ch-fM-YU5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="CKU-zM-T1X"/>
+                                    <constraint firstAttribute="height" constant="80" id="FNA-O1-2hs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="ucp-ms-A30"/>
+                                </constraints>
+                                <state key="normal" image="cam_icon"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4x9-uW-Xt1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8M5-Bv-isr"/>
+                            <constraint firstItem="fyp-Fo-lDD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MsD-aH-Lap"/>
+                            <constraint firstItem="tLW-m0-FLq" firstAttribute="top" secondItem="fyp-Fo-lDD" secondAttribute="bottom" constant="60" id="R7A-QU-A0s"/>
+                            <constraint firstItem="fyp-Fo-lDD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a0y-Ne-VSr"/>
+                            <constraint firstItem="tLW-m0-FLq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3r-Oh-PqL"/>
+                            <constraint firstItem="fyp-Fo-lDD" firstAttribute="top" secondItem="4x9-uW-Xt1" secondAttribute="bottom" constant="60" id="yCs-7u-e9y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="tLW-m0-FLq" id="pai-8L-QMM"/>
+                        <outlet property="likeButton" destination="fyp-Fo-lDD" id="MNa-qO-nzm"/>
+                        <outlet property="userButton" destination="4x9-uW-Xt1" id="CFP-N9-Xw7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="cam_icon" width="34" height="31"/>
+        <image name="face_icon" width="34" height="34"/>
+        <image name="heart_icon" width="34" height="31"/>
+    </resources>
 </document>

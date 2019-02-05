@@ -12,6 +12,8 @@
 		F354C72522097DE9007856FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F354C72322097DE9007856FA /* Main.storyboard */; };
 		F354C72722097DEB007856FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F354C72622097DEB007856FA /* Assets.xcassets */; };
 		F354C72A22097DEB007856FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F354C72822097DEB007856FA /* LaunchScreen.storyboard */; };
+		F354C7322209854F007856FA /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354C7312209854F007856FA /* RoundedButton.swift */; };
+		F354C73422098CC0007856FA /* Button+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F354C73322098CC0007856FA /* Button+Rounding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F354C72622097DEB007856FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F354C72922097DEB007856FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F354C72B22097DEB007856FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F354C7312209854F007856FA /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		F354C73322098CC0007856FA /* Button+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Rounding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 			children = (
 				F354C71F22097DE9007856FA /* AppDelegate.swift */,
 				F354C72122097DE9007856FA /* ViewController.swift */,
+				F354C7312209854F007856FA /* RoundedButton.swift */,
+				F354C73322098CC0007856FA /* Button+Rounding.swift */,
+				F354C72822097DEB007856FA /* LaunchScreen.storyboard */,
 				F354C72322097DE9007856FA /* Main.storyboard */,
 				F354C72622097DEB007856FA /* Assets.xcassets */,
-				F354C72822097DEB007856FA /* LaunchScreen.storyboard */,
 				F354C72B22097DEB007856FA /* Info.plist */,
 			);
 			path = RoundedButtons;
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F354C72222097DE9007856FA /* ViewController.swift in Sources */,
+				F354C73422098CC0007856FA /* Button+Rounding.swift in Sources */,
+				F354C7322209854F007856FA /* RoundedButton.swift in Sources */,
 				F354C72022097DE9007856FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
